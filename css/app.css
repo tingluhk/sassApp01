@@ -1,0 +1,168 @@
+/* ----------- variables ----------- */
+/* ----------- main App ----------- */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Lato",sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: grey;
+  padding: 2rem;
+  box-sizing: border-box; }
+
+.header01 {
+  border: 0.4rem solid #fcff42; }
+  .header01__logo-box {
+    position: absolute;
+    width: 0.5rem;
+    top: 7rem;
+    left: 4rem; }
+  .header01__logo {
+    height: 8rem; }
+  .header01__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #db099c;
+    padding: 2em;
+    display: inline;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+.bg-img {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background: url("../images/001.jpg") center center no-repeat;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
+  .bg-img:before {
+    content: '';
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #c9035f, #20f5c7);
+    opacity: .4; }
+
+.heading-primary {
+  color: white;
+  text-transform: uppercase; }
+
+.heading-primary--main {
+  display: block;
+  font-size: 5rem;
+  letter-spacing: 0.1rem;
+  line-height: 4.4rem;
+  animation-name: moveInLeft;
+  animation-duration: 2s; }
+
+.heading-primary--sub {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  animation-name: moveInRight;
+  animation-duration: 2s; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+.btn {
+  font-size: 1rem; }
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.1em 1em;
+  display: inline-block;
+  border-radius: 2em;
+  transition: all .2s;
+  position: relative; }
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0.3em 0.3em 0.3em rgba(158, 17, 17, 0.5); }
+
+.btn:active {
+  transform: translate(0px);
+  box-shadow: none; }
+
+.btn--white {
+  background-color: white;
+  color: grey; }
+
+.btn::after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s; }
+
+.btn--white::after {
+  background-color: white; }
+
+.btn:hover::after {
+  transform: scaleX(1.5) scaleY(2);
+  opacity: 0; }
+
+.btn--animated {
+  animation: moveInBottom .3s ease-out 1.5s;
+  animation-duration: 1s;
+  animation-fill-mode: backwards; }
+
+/* ----------- Import Cusom SASS partials ----------- */
+/* ----------- seciont nav ----------- */
+nav {
+  margin: 0.5rem;
+  background-color: #f9ed69; }
+
+.navigation01 {
+  list-style: none; }
+  .navigation01 li {
+    display: inline-block;
+    margin-left: 30px; }
+    .navigation01 li:first-child {
+      margin: 0; }
+
+/* ----------- seciont 1 ----------- */
+.section01 {
+  height: 80vh;
+  background-color: #fcff42; }
