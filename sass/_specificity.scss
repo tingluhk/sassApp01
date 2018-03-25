@@ -1,0 +1,27 @@
+/* this show specifity how it works. Sudo :: has high priority also */
+
+body{
+  padding:5px;
+}
+
+.button{
+  font-size:20px;
+  color:white;
+  background-color:blue;
+}
+
+a{
+  background-color:purple;
+}
+
+#nav div.pull-right a.button{
+  background-color:orange;
+}
+
+#nav div.pull-right a.button:hover{
+  background-color:green;
+}
+
+#nav a.button:hover div.something #sineth{
+  background-color:yellow;
+}
