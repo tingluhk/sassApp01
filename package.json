@@ -1,0 +1,23 @@
+{
+  "name": "sassapp01",
+  "version": "1.0.0",
+  "description": "*SASS simple app\r - to run the sass \"sass --watch app.scss:app.css\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tingluhk/sassApp01.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tingluhk/sassApp01/issues"
+  },
+  "homepage": "https://github.com/tingluhk/sassApp01#readme",
+  "devDependencies": {
+    "node-sass": "^4.8.3"
+  },
+  "dependencies": {}
+}
