@@ -20,7 +20,7 @@ body {
   font-family: "Lato",sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #777;
+  color: grey;
   padding: 2rem;
 
   box-sizing: border-box;
@@ -28,19 +28,56 @@ body {
 
 .header01{
   border: 0.4rem solid rgb(252, 255, 66);
+
+
+  &__logo-box{
+    position: absolute;
+    width:0.5rem;
+    // border:1px solid #ce0ab4;
+    top:7rem;
+    left:4rem;
+  }
+
+  &__logo{
+    height: 8rem;
+    // border: 1px solid #4b99ff;
+  }
+
+  &__text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(219, 9, 156);
+    padding: 2em;
+    display: inline;
+    transform: translate(-50%,-50%);
+    text-align: center; //this makes the enter here a: button in the middle
+  }
+
+
 }
+
+
+
+
+
+
+
+
+
+
 
 .bg-img {
   position: relative;
   width: 100%;
   height: 90vh;
-  background: url('images/001.jpg') center center no-repeat;
+  background: url('../images/001.jpg') center center no-repeat;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 
   &:before {
     content: '';
-    color: #fff;
+    color: white;
     position: absolute;
     top: 0;
     right: 0;
@@ -51,28 +88,8 @@ body {
     }
 }
 
-.header__logo-box{
-  position: absolute;
-  top:6rem;
-  left:6rem;
-}
-
-.header__logo{
-  height: 6rem;
-}
-
-.header__text-box{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: rgb(238, 16, 90);
-  padding: 2em;
-  display: inline;
-  transform: translate(-50%,-50%);
-  text-align: center; //this makes the enter here a: button in the middle
-}
 .heading-primary{
-  color: #fff;
+  color: white;
   text-transform: uppercase;
 }
 
@@ -154,8 +171,8 @@ body {
 }
 
 .btn--white{
-  background-color: #fff;
-  color: #777;
+  background-color: white;
+  color: grey;
 }
 
 .btn::after{
@@ -173,7 +190,7 @@ body {
 
 
 .btn--white::after{
-  background-color: #fff;
+  background-color: white;
 }
 
 .btn:hover::after{

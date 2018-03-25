@@ -4,7 +4,7 @@
   "description": "*SASS simple app\r - to run the sass \"sass --watch app.scss:app.css\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/app.scss css/app.css -w"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,5 @@
   "homepage": "https://github.com/tingluhk/sassApp01#readme",
   "devDependencies": {
     "node-sass": "^4.8.3"
-  },
-  "dependencies": {}
+  }
 }
